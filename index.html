@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>(*•‿•*) Pillaging Pirates (ᴗᵔᴥᵔ)</title>
+  <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background : black;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="fixed text-white text-sm ml-2 mt-1 select-none"><span>Score: </span><span id="scoreEl">0</span></div>
+
+  <div class="fixed inset-0 flex items-center justify-center" id="modalEl">
+    <div id="whiteModalEl" class="bg-white max-w-md w-full p-6 text-center">
+
+      <h1 
+        class="text-4xl font-bold leading-none" 
+        style="margin-bottom: 30px; font-family: copperplate;"
+      >Pillaging Pirates</h1>
+
+      <p class="text-sm text-grey-700 mb-4">You and your division were sent on a mission to colonize the Andromeda galaxy by your Emperor Gaius.</p>
+
+      <p class="text-sm text-grey-700 mb-4">As you were on your way to the galaxy, you were intercepted by pirates.</p>
+
+      <p class="text-sm text-grey-700 mb-4">Your division tried to ward off the thieving pirates, but they were too strong.</p>
+
+      <p class="text-sm text-grey-700 mb-4">You were separated from the group and now you are all alone, fighting against the hostile mob of spaceships surrounding and enclosing you.</p>
+
+      <p class="text-sm text-grey-700 mb-4">What would you do?</p>
+
+      <hr style="height: 5px; background-color: lightgrey;" />
+      <p class="text-sm text-grey-700 mb-4">Use the arrow keys to move.</p>
+      <p class="text-sm text-grey-700 mb-4">Click the left mouse button to shoot.</p>
+      <p class="text-sm text-grey-700 mb-4">Move the mouse to aim.</p>
+      <hr style="height: 5px; background-color: lightgrey;" />
+
+
+      <h1 class="text-4xl font-bold leading-none" id="bigScoreEl" style="margin-top: 25px">0</h1>
+      <p class="text-sm text-grey-700 mb-4">Points</p>
+      <div>
+        <button class="bg-blue-500 text-white w-full py-3 rounded-full text-sm" id="startGameBtn">Start Game</button>
+      </div>
+    </div>
+  </div>
+  <canvas></canvas>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
